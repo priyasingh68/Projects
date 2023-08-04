@@ -689,7 +689,6 @@ verifyToken: async (req, res, next) => {
 
     if (profileData.password) {
       const { newPassword, confirmPassword, oldPassword } = profileData;
-var x=10;
       // Check if the confirm password matches the new password
       if (newPassword !== confirmPassword) {
         return res.status(400).json({ error: 'Passwords do not match' });
